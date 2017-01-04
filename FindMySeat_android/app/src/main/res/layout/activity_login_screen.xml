@@ -1,6 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
-android:background="#e3e3e3"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:padding="@dimen/activity_horizontal_margin"
@@ -31,12 +30,15 @@ android:orientation="vertical">
         android:layout_weight="0.5"
         android:orientation="vertical">
 
+
+
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:hint="Username"/>
+            android:hint="Username"
+            android:imeOptions="actionNext" />
 
         <EditText
             android:id="@+id/password"
@@ -51,6 +53,12 @@ android:orientation="vertical">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"/>
+
+        <CheckBox
+            android:text="Remember my password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox2" />
 
     </LinearLayout>
 
