@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -17,14 +18,16 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
     private SharedPreferences loginPreferences;
     private SharedPreferences.Editor loginPrefsEditor;
     private Boolean saveLogin;
+    static String TAG = "HERERERERE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // initializing all class entities
         login_btn = (Button)findViewById(R.id.login_button);
+        Log.d(TAG, "what what what");
         if(login_btn != null) {
-        login_btn.setOnClickListener(this);
+            login_btn.setOnClickListener(this);
        }
         setContentView(R.layout.activity_login_screen);
         editTextUsername = (EditText) findViewById(R.id.username);

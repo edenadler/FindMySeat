@@ -12,7 +12,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo"
         android:id="@+id/imageView4" />
 
 </android.support.design.widget.CoordinatorLayout>
