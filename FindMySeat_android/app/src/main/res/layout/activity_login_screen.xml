@@ -1,16 +1,12 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:padding="@dimen/activity_horizontal_margin"
-tools:context="com.prototype.joint.findmyseat.LoginScreen"
-android:orientation="vertical">
-
 <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.5"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.prototype.joint.findmyseat.LoginScreen"
     android:orientation="vertical">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -21,45 +17,33 @@ android:orientation="vertical">
         android:textSize="30sp"
         android:textColor="#333333"/>
 
-</RelativeLayout>
 
-
-    <LinearLayout
+    <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:orientation="vertical">
+        android:inputType="textEmailAddress"
+        android:hint="Username"
+        android:imeOptions="actionNext" />
 
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"/>
 
+    <Button
+        android:id="@+id/login_button"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
 
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="Username"
-            android:imeOptions="actionNext" />
+    <CheckBox
+        android:text="Remember my password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2" />
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Password"/>
-
-        <Button
-            android:id="@+id/btn"
-            android:layout_marginTop="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"/>
-
-        <CheckBox
-            android:text="Remember my password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox2" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
