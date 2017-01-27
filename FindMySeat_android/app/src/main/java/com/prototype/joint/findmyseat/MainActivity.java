@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(mInHome);
                 MainActivity.this.finish();
             }
-        }, 5000);
+        }, 4000);
     }
 
     @Override

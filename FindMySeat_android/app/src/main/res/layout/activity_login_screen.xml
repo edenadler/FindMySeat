@@ -1,65 +1,60 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/activity_horizontal_margin"
     tools:context="com.prototype.joint.findmyseat.LoginScreen"
+    android:layout_centerHorizontal="true"
     android:orientation="vertical">
 
-    <RelativeLayout
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:gravity="center"
-            android:text="Finding a seat has never been so easy"
-            android:textSize="30sp"
-            android:textColor="#333333"/>
-
-    </RelativeLayout>
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Finding a seat has never been so easy"
+        android:textSize="30sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="80dp"/>
 
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:orientation="vertical">
+        android:inputType="textEmailAddress"
+        android:hint="שם משתמש"
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="סיסמה"
+        android:layout_marginBottom="50dp"/>
 
 
 
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="Username"
-            android:imeOptions="actionNext" />
+    <CheckBox
+        android:text="זכור את הסיסמה שלי"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"/>
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Password"/>
+    <Button
+        android:text="התחבר"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/press_to_login"/>
 
-        <Button
-            android:id="@+id/login_button"
-            android:layout_marginTop="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"/>
-
-        <CheckBox
-            android:text="Remember my password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox2" />
-
-    </LinearLayout>
+    <Button
+        android:text="משתמש חדש"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_user_press" />
 
 </LinearLayout>

@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "610414776112",
+    "firebase_url": "https://findmyseatandroid-ef964.firebaseio.com",
+    "project_id": "findmyseatandroid-ef964",
+    "storage_bucket": "findmyseatandroid-ef964.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610414776112:android:f8939f754b60a8b3",
+        "android_client_info": {
+          "package_name": "com.prototype.joint.findmyseat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610414776112-4hvv6nkn11s6b3m9jobji88352tml38f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prototype.joint.findmyseat",
+            "certificate_hash": "241D71E68495A25B995D8464AD46A8E2E4290B59"
+          }
+        },
+        {
+          "client_id": "610414776112-bmbfe23fs28thj2475imnps3n1lm8bv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610414776112-bmbfe23fs28thj2475imnps3n1lm8bv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
